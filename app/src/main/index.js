@@ -1,6 +1,7 @@
 'use strict'
 
 import { app, BrowserWindow } from 'electron'
+import Iroha from './iroha'
 
 let mainWindow
 const winURL = process.env.NODE_ENV === 'development'
@@ -39,3 +40,5 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
+app.Iroha = Iroha

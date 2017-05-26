@@ -1,7 +1,7 @@
 {
-  "name": "xp-electron-vue",
+  "name": "electron-vue-with-irohajs",
   "version": "0.0.0",
-  "description": "An electron-vue project",
+  "description": "An electron-vue project which work with irohajs",
   "scripts": {
     "build": "node tasks/release.js",
     "build:clean": "cross-env PLATFORM_TARGET=clean node tasks/release.js",
@@ -20,7 +20,7 @@
     "unit": "karma start test/unit/karma.conf.js",
     "postinstall": "npm run lint:fix && cd app && npm install"
   },
-  "author": "Greg Holguin <simulatedgreg@gmail.com>",
+  "author": "oimou <s1190013@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.8.0",

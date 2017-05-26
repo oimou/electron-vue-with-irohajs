@@ -5,6 +5,7 @@
     <current-page></current-page>
     <versions></versions>
     <links></links>
+    <iroha></iroha>
   </div>
 </template>
 
@@ -12,11 +13,13 @@
   import CurrentPage from './LandingPageView/CurrentPage'
   import Links from './LandingPageView/Links'
   import Versions from './LandingPageView/Versions'
+  import Iroha from './LandingPageView/Iroha'
   export default {
     components: {
       CurrentPage,
       Links,
-      Versions
+      Versions,
+      Iroha
     },
     name: 'landing-page'
   }
