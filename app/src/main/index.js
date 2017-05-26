@@ -25,7 +25,6 @@ function createWindow () {
 
   // eslint-disable-next-line no-console
   console.log('mainWindow opened')
-  console.log(Iroha)
 }
 
 app.on('ready', createWindow)
@@ -41,3 +40,5 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
+app.Iroha = Iroha
