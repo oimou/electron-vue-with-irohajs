@@ -1,7 +1,7 @@
 {
-  "name": "xp-electron-vue",
+  "name": "electron-vue-with-irohajs",
   "version": "0.0.0",
-  "description": "An electron-vue project",
+  "description": "An electron-vue project which work with irohajs",
   "main": "./dist/main.js",
   "dependencies": {
     "@oimou/irohajs": "^1.0.0",
