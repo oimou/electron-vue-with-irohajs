@@ -4,8 +4,9 @@
   "description": "An electron-vue project which work with irohajs",
   "main": "./dist/main.js",
   "dependencies": {
-    "@oimou/irohajs": "^1.1.0",
     "babel-runtime": "^6.23.0",
+    "js-sha3": "^0.5.7",
+    "supercop.js": "github:gucci-swallow/supercop.js",
     "vue": "^2.1.10",
     "vue-electron": "^1.0.6",
     "vue-resource": "^1.0.3",
