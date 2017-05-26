@@ -1,6 +1,7 @@
 'use strict'
 
 import { app, BrowserWindow } from 'electron'
+import Iroha from './iroha'
 
 let mainWindow
 const winURL = process.env.NODE_ENV === 'development'
@@ -24,6 +25,7 @@ function createWindow () {
 
   // eslint-disable-next-line no-console
   console.log('mainWindow opened')
+  console.log(Iroha)
 }
 
 app.on('ready', createWindow)
