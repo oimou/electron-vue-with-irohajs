@@ -1,6 +1,6 @@
-# xp-electron-vue
+# electron-vue-with-irohajs
 
-> An electron-vue project
+> An electron-vue project which work with irohajs
 
 ## Build Setup
 
