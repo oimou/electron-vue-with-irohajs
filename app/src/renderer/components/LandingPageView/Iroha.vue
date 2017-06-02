@@ -1,28 +1,44 @@
 <template>
   <div>
     <button v-on:click="createKeyPair">createKeyPair</button>
+
+    <ul>
+      <li>
+        publicKey: {{ publicKey }}
+      </li>
+
+      <li>
+        privateKey: {{ privateKey }}
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-  import { remote } from 'electron'
-
-  const Iroha = remote.app.Iroha
+  import { mapGetters, mapActions } from 'vuex'
 
   export default {
     name: 'iroha',
-    methods: {
-      createKeyPair: () => {
-        const keyPair = Iroha.createKeyPair()
 
-        alert(`publicKey: ${keyPair.publicKey}\nprivateKey: ${keyPair.privateKey}`)
-      }
+    computed: {
+      ...mapGetters([
+        'publicKey',
+        'privateKey'
+      ])
+    },
+
+    methods: {
+      ...mapActions([
+        'createKeyPair'
+      ])
     }
   }
 </script>
 
 <style scoped>
   div {
-    color: red;
+    border: 1px solid red;
+    margin: 15px;
+    padding: 15px;
   }
 </style>
