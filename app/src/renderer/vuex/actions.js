@@ -1,4 +1,7 @@
 import * as types from './mutation-types'
+import { remote } from 'electron'
+
+const Iroha = remote.app.Iroha
 
 export const decrementMain = ({ commit }) => {
   commit(types.DECREMENT_MAIN_COUNTER)
@@ -9,5 +12,7 @@ export const incrementMain = ({ commit }) => {
 }
 
 export const createKeyPair = ({ commit }) => {
-  commit(types.CREATE_KEY_PAIR)
+  const keyPair = Iroha.createKeyPair()
+
+  commit(types.CREATE_KEY_PAIR, keyPair)
 }

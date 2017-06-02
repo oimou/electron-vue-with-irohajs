@@ -1,7 +1,4 @@
 import * as types from '../mutation-types'
-import { remote } from 'electron'
-
-const Iroha = remote.app.Iroha
 
 const state = {
   saved: {
@@ -11,9 +8,7 @@ const state = {
 }
 
 const mutations = {
-  [types.CREATE_KEY_PAIR] (state) {
-    const keyPair = Iroha.createKeyPair()
-
+  [types.CREATE_KEY_PAIR] (state, keyPair) {
     state.saved.publicKey = keyPair.publicKey
     state.saved.privateKey = keyPair.privateKey
   }
