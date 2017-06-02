@@ -1,13 +1,13 @@
 <template>
   <div>
-    <button v-on:click="createKeyPair">createKeyPair</button>
+    <button id="btn-create-key-pair" v-on:click="createKeyPair">createKeyPair</button>
 
     <ul>
-      <li>
+      <li id="public-key">
         publicKey: {{ publicKey }}
       </li>
 
-      <li>
+      <li id="private-key">
         privateKey: {{ privateKey }}
       </li>
     </ul>
