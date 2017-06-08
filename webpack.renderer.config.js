@@ -87,6 +87,9 @@ let rendererConfig = {
         ? path.resolve(__dirname, 'app/node_modules')
         : false
     }),
+    new webpack.DefinePlugin({
+      PROTO_PATH: JSON.stringify(path.join(__dirname, '/app/proto/'))
+    }),
     new webpack.NoEmitOnErrorsPlugin()
   ],
   output: {

@@ -6,6 +6,7 @@
     <versions></versions>
     <links></links>
     <iroha></iroha>
+    <user-service></user-service>
   </div>
 </template>
 
@@ -14,12 +15,14 @@
   import Links from './LandingPageView/Links'
   import Versions from './LandingPageView/Versions'
   import Iroha from './LandingPageView/Iroha'
+  import UserService from './LandingPageView/UserService'
   export default {
     components: {
       CurrentPage,
       Links,
       Versions,
-      Iroha
+      Iroha,
+      UserService
     },
     name: 'landing-page'
   }
