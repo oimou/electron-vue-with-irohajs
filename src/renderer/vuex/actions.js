@@ -20,6 +20,7 @@ export const createKeyPair = ({ commit }) => {
 }
 
 // Users
+// eslint-disable-next-line
 import grpc from 'grpc'
 
 /* global PROTO_PATH */
@@ -123,4 +124,3 @@ export const deleteUser = ({ commit }) => {
     commit(types.DELETE_USER)
   })
 }
-
